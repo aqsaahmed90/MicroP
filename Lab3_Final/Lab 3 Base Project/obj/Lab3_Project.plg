@@ -1,0 +1,16 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Project:</h2>
+C:\Users\Aqsa Ahmed\Desktop\UNIVERSITY\MicroP\MyLab3\Final\Lab 3 Base Project\Lab3_Project.uvproj
+Project File Date:  11/06/2013
+
+<h2>Output:</h2>
+Build target 'Target 1'
+compiling main.c...
+src\main.c(38): warning:  #177-D: variable "delayP" was declared but never referenced
+src\main.c(38): warning:  #177-D: variable "delayR" was declared but never referenced
+linking...
+Program Size: Code=19832 RO-data=800 RW-data=96 ZI-data=1632  
+".\obj\Lab3_Project.axf" - 0 Errors, 2 Warning(s).
