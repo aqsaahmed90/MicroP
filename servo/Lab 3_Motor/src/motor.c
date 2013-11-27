@@ -1,6 +1,10 @@
+/**
+ * @file
+ * @author 	Aqsa Ahmed <aqsa.ahmed@mail.mcgill.ca>
+ */
+
 #include "stm32f4_discovery_lis302dl.h"
 #include "motor.h"
-
 
 int tRoll;
 int tPitch;

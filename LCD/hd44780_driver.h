@@ -5,53 +5,53 @@
 #include "stm32f4xx.h"
 #include "stm32f4xx_conf.h"
 
-#define HD44780_GPIO_CLOCK1 	RCC_AHB1Periph_GPIOE
-#define HD44780_GPIO_CLOCK2 	RCC_AHB1Periph_GPIOB
+#define LCD_GPIO_CLOCK1 	RCC_AHB1Periph_GPIOE
+#define LCD_GPIO_CLOCK2 	RCC_AHB1Periph_GPIOB
 
 
-#define HD44780_RS					GPIO_Pin_8
-#define GPIO_PORT_RS		        GPIOB
+#define LCD_RS					GPIO_Pin_8
+#define GPIO_PORT_RS		GPIOB
 
-#define HD44780_E 					GPIO_Pin_0
-#define GPIO_PORT_E		            GPIOE
+#define LCD_E 					GPIO_Pin_9
+#define GPIO_PORT_E		  GPIOB	
 
-#define HD44780_DB0					GPIO_Pin_9
-#define GPIO_PORT_DB0		        GPIOB
+#define LCD_DB0					GPIO_Pin_0
+#define GPIO_PORT_DB0		GPIOE
 
-#define HD44780_DB1					GPIO_Pin_2
-#define GPIO_PORT_DB1		        GPIOE
+#define LCD_DB1					GPIO_Pin_1
+#define GPIO_PORT_DB1		GPIOE
 
-#define HD44780_DB2					GPIO_Pin_1
-#define GPIO_PORT_DB2		        GPIOE
+#define LCD_DB2					GPIO_Pin_2
+#define GPIO_PORT_DB2		GPIOE
 
-#define HD44780_DB3					GPIO_Pin_4
-#define GPIO_PORT_DB3		        GPIOE
+#define LCD_DB3					GPIO_Pin_3
+#define GPIO_PORT_DB3		GPIOE
 
-#define HD44780_DB4					GPIO_Pin_3
-#define GPIO_PORT_DB4		        GPIOE
+#define LCD_DB4					GPIO_Pin_4
+#define GPIO_PORT_DB4		GPIOE
 
-#define HD44780_DB5					GPIO_Pin_6
-#define GPIO_PORT_DB5		        GPIOE
+#define LCD_DB5					GPIO_Pin_5
+#define GPIO_PORT_DB5		GPIOE
 
-#define HD44780_DB6					GPIO_Pin_5
-#define GPIO_PORT_DB6		        GPIOE
+#define LCD_DB6					GPIO_Pin_6
+#define GPIO_PORT_DB6		GPIOE
 
-#define HD44780_DB7					GPIO_Pin_7
-#define GPIO_PORT_DB7		        GPIOB
+#define LCD_DB7					GPIO_Pin_7
+#define GPIO_PORT_DB7		GPIOB
 
 #define RS_COMMAND					0
-#define RS_CHAR						1
+#define RS_CHAR							1
 
 
-#define HD44780_TWO_LINE_ENABLE		    0x38
-#define HD44780_8_BIT_MODE              0x30
+#define LCD_TWO_LINE_ENABLE		    	0x38
+#define LCD_8_BIT_MODE              0x30
 
-#define HD44780_DISPLAY_ON				0x0C
-#define HD44780_CURSOR_UNDERLINE        0x02
-#define HD44780_CURSOR_BLINK 			0x01
+#define LCD_DISPLAY_ON							0x0C
+#define LCD_CURSOR_UNDERLINE        0x02
+#define LCD_CURSOR_BLINK 						0x01
 
-#define HD44780_CLEAR_DISPLAY			0x01
-#define HD44780_LOCATION_COMMAND        0x80
+#define LCD_CLEAR_DISPLAY						0x01
+#define LCD_LOCATION_COMMAND        0x80
 /* function to return the right enum if VAL == 0 or VAL == 1 */
 /* function needed to remove warning when GPIO_WriteBit expects an enum */
 /* whereas an int is provided instead */
@@ -68,7 +68,7 @@
  * @param void
  * @returns void
  */
-void hd44780_init(void);
+void LCD_init(void);
 
 
 /**
@@ -78,7 +78,7 @@ void hd44780_init(void);
  * @returns void
  */
 
-void hd44780_send_data(uint8_t val, uint8_t rs_line);
+void LCD_send_data(uint8_t val, uint8_t rs_line);
 
 /**
  * Sets the enable line to low, then to high again
@@ -90,7 +90,7 @@ void hd44780_send_data(uint8_t val, uint8_t rs_line);
  * @param rs_line: either RS_COMMAND or RS_CHAR
  * @returns void
  */
-void hd44780_enable_write(uint8_t rs_line);
+void LCD_enable_write(uint8_t rs_line);
 
 /**
  * Clears the display -- erases any text on the display
@@ -98,7 +98,7 @@ void hd44780_enable_write(uint8_t rs_line);
  * @param void
  * @returns void
  */
-void hd44780_clear_display(void);
+void LCD_clear_display(void);
 
 /**
  * Write characters to the display (maybe modify it to consider cursor position)
@@ -108,7 +108,7 @@ void hd44780_clear_display(void);
  *
  * @returns void
  */
-void hd44780_write_char(char *text, uint8_t length);
+void LCD_write_char(char *text, uint8_t length);
 
 /**
  * Move the cursor to location specified in parameter
@@ -116,7 +116,7 @@ void hd44780_write_char(char *text, uint8_t length);
  * @param location: location to move cursor to
  * @returns void
  */
-void hd44780_move_cursor(uint8_t location);
+void LCD_move_cursor(uint8_t location);
 
-void hd44780_move_second_line(void);
+void LCD_move_second_line(void);
 #endif

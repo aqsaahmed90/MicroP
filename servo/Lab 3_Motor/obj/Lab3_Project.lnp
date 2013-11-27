@@ -8,7 +8,6 @@
 ".\obj\gpio.o"
 ".\obj\filter.o"
 ".\obj\motor.o"
-".\obj\hd44780_driver.o"
 ".\obj\misc.o"
 ".\obj\stm32f4xx_adc.o"
 ".\obj\stm32f4xx_can.o"
