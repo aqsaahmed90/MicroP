@@ -10,11 +10,21 @@ int tRoll;
 int tPitch;
 int i;
 
-/* Delayer ------------------------------------------------------------------*/
+
+/**
+ * @brief Software delay created.
+ *
+ * @note	Loops till the counter reaches the delay time
+ */
 void Delay(uint32_t delay) {
   for(i=0;i<delay;i++); 
 }
 
+/**
+ * @brief Configures and intializes the TIM4 for the motors.
+ *
+ * @note	Loops till the counter reaches the delay time
+ */
 void initMotorR(void){
 	RCC_AHB1PeriphClockCmd( RCC_AHB1Periph_GPIOD, ENABLE );		//Enables  the AHB1 peripheral clock.
   RCC_APB1PeriphClockCmd( RCC_APB1Periph_TIM4, ENABLE );		//Enables  the APB1 peripheral clock.

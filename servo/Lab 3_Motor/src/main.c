@@ -80,16 +80,31 @@ int main(){
 	initMotorR();
 	initMotorP();
 	
-	while(1) {
-		if(tick){
-			new_vals = read_Accelerometer();
-			printf("pitch: %f\n", new_vals.pitch);
-			printf("roll : %f\n", new_vals.roll);
-			
-			tick = 0;
-			Clear_Accel_Int();
-		}
-		motorMove(new_vals.roll,new_vals.pitch);	
-	}
+//	while(1) {
+//		if(tick){
+//			new_vals = read_Accelerometer();
+//			printf("pitch: %f\n", new_vals.pitch);
+//			printf("roll : %f\n", new_vals.roll);
+//			
+//			tick = 0;
+//			Clear_Accel_Int();
+//		}
+//		//motorMove(new_vals.roll,new_vals.pitch);	
+//		motorMove(-90,0);
+//		motorMove(90,0);
+//		motorMove(0,0);
+//		motorMove(0,90);
+//		motorMove(0,-90);
+//		motorMove(90,90);
+//		motorMove(-90,-90	);	
+//	}
+		motorMove(-90,0);
+		motorMove(90,0);
+		motorMove(0,0);
+		motorMove(0,90);
+		motorMove(0,-90);
+		motorMove(90,90);
+		motorMove(-90,-90);
+		while(1);
 }
 

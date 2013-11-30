@@ -1,5 +1,8 @@
 #include "hd44780_driver.h"
 #include "cmsis_os.h"
+
+
+
 /**
  * === LCD Driver! ===
  *
@@ -180,4 +183,16 @@ void LCD_move_cursor(uint8_t location) {
 
 void LCD_move_second_line(void) {
     LCD_move_cursor(40);
+}
+
+void LCD_print_angle(char* pitch, char* roll){
+		LCD_write_char("Pitch: ", 7);
+		LCD_write_char(pitch,  6);
+		
+		LCD_move_second_line();
+		
+		LCD_write_char("Roll : ",  7);
+		LCD_write_char(roll,  6);
+		LCD_move_cursor(0);
+		osDelay(100);
 }

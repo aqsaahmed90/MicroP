@@ -119,4 +119,14 @@ void LCD_write_char(char *text, uint8_t length);
 void LCD_move_cursor(uint8_t location);
 
 void LCD_move_second_line(void);
+
+/**
+ * Display pitch and role angles
+ *
+ * @param pitch: angle of pitch (-90 to 90)
+ * @param roll : angle of roll  (-90 to 90)
+ * @returns void
+ */
+void LCD_print_angle(char* pitch, char* roll);
+
 #endif

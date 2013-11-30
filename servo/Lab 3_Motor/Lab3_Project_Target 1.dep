@@ -37,7 +37,7 @@ I (C:\Users\Aqsa Ahmed\Documents\GitHub\MicroP\servo\Lab 3_Motor\STM32F4xx_StdPe
 I (C:\Users\Aqsa Ahmed\Documents\GitHub\MicroP\servo\Lab 3_Motor\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_usart.h)(0x4EAACACA)
 I (C:\Users\Aqsa Ahmed\Documents\GitHub\MicroP\servo\Lab 3_Motor\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_wwdg.h)(0x4EAACACA)
 I (C:\Users\Aqsa Ahmed\Documents\GitHub\MicroP\servo\Lab 3_Motor\STM32F4xx_StdPeriph_Driver\inc\misc.h)(0x4EAACACA)
-F (.\src\main.c)(0x5295416D)(-c --cpu Cortex-M4.fp -D__EVAL -g -O0 --apcs=interwork -I.\src -I.\STM32F4xx_StdPeriph_Driver\inc -I.\LIS302DL\inc --c99-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\ST\STM32F4xx-DHSE_VALUE="8000000" -DUSE_STDPERIPH_DRIVER -DSTM32F40XX-o .\obj\main.o --omf_browse .\obj\main.crf --depend .\obj\main.d)
+F (.\src\main.c)(0x5296F4E4)(-c --cpu Cortex-M4.fp -D__EVAL -g -O0 --apcs=interwork -I.\src -I.\STM32F4xx_StdPeriph_Driver\inc -I.\LIS302DL\inc --c99-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\ST\STM32F4xx-DHSE_VALUE="8000000" -DUSE_STDPERIPH_DRIVER -DSTM32F40XX-o .\obj\main.o --omf_browse .\obj\main.crf --depend .\obj\main.d)
 I (C:\Keil\ARM\ARMCC\include\stdio.h)(0x51C851F4)
 I (C:\Users\Aqsa Ahmed\Documents\GitHub\MicroP\servo\Lab 3_Motor\src\stm32f4xx.h)(0x51104FF6)
 I (C:\Keil\ARM\CMSIS\Include\core_cm4.h)(0x51C84FFA)
@@ -235,7 +235,7 @@ F (.\src\filter.h)(0x5273E8EE)()
 F (.\src\filter.c)(0x526ADDDC)(-c --cpu Cortex-M4.fp -D__EVAL -g -O0 --apcs=interwork -I.\src -I.\STM32F4xx_StdPeriph_Driver\inc -I.\LIS302DL\inc --c99-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\ST\STM32F4xx-DHSE_VALUE="8000000" -DUSE_STDPERIPH_DRIVER -DSTM32F40XX-o .\obj\filter.o --omf_browse .\obj\filter.crf --depend .\obj\filter.d)
 I (C:\Users\Aqsa Ahmed\Documents\GitHub\MicroP\servo\Lab 3_Motor\src\filter.h)(0x5273E8EE)
 F (.\src\motor.h)(0x52951DA2)()
-F (.\src\motor.c)(0x529521E1)(-c --cpu Cortex-M4.fp -D__EVAL -g -O0 --apcs=interwork -I.\src -I.\STM32F4xx_StdPeriph_Driver\inc -I.\LIS302DL\inc --c99-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\ST\STM32F4xx-DHSE_VALUE="8000000" -DUSE_STDPERIPH_DRIVER -DSTM32F40XX-o .\obj\motor.o --omf_browse .\obj\motor.crf --depend .\obj\motor.d)
+F (.\src\motor.c)(0x5296FAF1)(-c --cpu Cortex-M4.fp -D__EVAL -g -O0 --apcs=interwork -I.\src -I.\STM32F4xx_StdPeriph_Driver\inc -I.\LIS302DL\inc --c99-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\ST\STM32F4xx-DHSE_VALUE="8000000" -DUSE_STDPERIPH_DRIVER -DSTM32F40XX-o .\obj\motor.o --omf_browse .\obj\motor.crf --depend .\obj\motor.d)
 I (C:\Users\Aqsa Ahmed\Documents\GitHub\MicroP\servo\Lab 3_Motor\LIS302DL\inc\stm32f4_discovery_lis302dl.h)(0x51197F1A)
 I (C:\Users\Aqsa Ahmed\Documents\GitHub\MicroP\servo\Lab 3_Motor\src\stm32f4xx.h)(0x51104FF6)
 I (C:\Keil\ARM\CMSIS\Include\core_cm4.h)(0x51C84FFA)
