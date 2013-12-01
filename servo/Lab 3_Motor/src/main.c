@@ -105,6 +105,16 @@ int main(){
 		motorMove(0,-90);
 		motorMove(90,90);
 		motorMove(-90,-90);
-		while(1);
+		
+		int n=1;
+		double roll = -45;
+		while(1){
+			
+			if (((roll + n) < -45) || ((roll + n) >  45))
+				n = -n; // if maximum/minimum change direction
+			
+			roll = roll + n;
+			motorMove(roll,80);
+		}
 }
 
